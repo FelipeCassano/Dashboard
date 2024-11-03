@@ -16,7 +16,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
+    // o html precisa estar englobando tudo
+
     <html lang='en'>
+      {/* embaixo do body começa o que voce quer que apareça na tela, inclusive o AuthProvider do Context */}
+
       <body
         className={cn(
           'min-h-screen',
